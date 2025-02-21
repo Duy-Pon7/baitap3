@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Nửa trên: ImageView -->
+    <ImageView
+        android:id="@+id/topImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:src="@drawable/top_background1" />
+
+    <!-- Nửa dưới: Form Login -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome\nBack"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#E46A2B"/>
+
+        <!-- Email Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:drawableStart="@drawable/email"
+                android:padding="10dp"
+                android:drawablePadding="8dp"/>
+        </LinearLayout>
+
+        <!-- Password Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:drawableStart="@drawable/password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:drawablePadding="8dp"/>
+        </LinearLayout>
+
+        <!-- Button Login -->
+        <ImageButton
+            android:id="@+id/btnLogin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="end"
+            android:background="@drawable/btn_arraw1"
+            android:contentDescription="Login"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnFacebook"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_border"
+                android:drawableEnd="@drawable/facebook"
+                android:drawablePadding="4dp"
+                android:padding="8dp"
+                android:text="Facebook"
+                android:textColor="@android:color/holo_blue_dark"/>
+
+            <Button
+                android:id="@+id/btnGoogle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_border"
+                android:drawableEnd="@drawable/google"
+                android:drawablePadding="4dp"
+                android:padding="8dp"
+                android:text="Google"
+                android:textColor="@android:color/holo_blue_dark"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/registerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are you new user? Register"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
