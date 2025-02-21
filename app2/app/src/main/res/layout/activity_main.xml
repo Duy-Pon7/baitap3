@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#FF0000" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view1"
+        android:background="#FFFF00" />
+
+    <!-- 3. Màu xanh dương lớn bên phải -->
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:layout_below="@id/view1"
+        android:layout_toRightOf="@id/view2"
+        android:background="#0000FF" />
+
+    <!-- 4. Màu hồng, đẩy qua phải -->
+    <View
+        android:id="@+id/view4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/view3"
+        android:layout_toRightOf="@id/view2"
+        android:background="#FFC0CB" />
+
+    <!-- 5. Màu tím, đẩy qua phải kế bên màu hồng -->
+    <View
+        android:id="@+id/view5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/view3"
+        android:layout_toRightOf="@id/view4"
+        android:background="#800080" />
+
+</RelativeLayout>
